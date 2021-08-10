@@ -8,13 +8,14 @@ const db = require("./db.js");
 
 
 
+
+app.use(express.json());
+
+const path = require('path')
 const userRoute = require('./routes/userRoute')
 
 const ordersRoute = require('./routes/ordersRoute') 
  
-app.use(express.json());
-
-const path = require('path')
 
 
 
