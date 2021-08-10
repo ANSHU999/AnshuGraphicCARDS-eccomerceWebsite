@@ -25,9 +25,9 @@ app.use('/api/graphics/',GraphicsRoutes)
 app.use('/api/users/' ,userRoute)
 app.use('/api/orders/' , ordersRoute)
 
-if(process.env.NODE_ENV === 'productions')
+if(process.env.NODE_ENV === 'production')
 {
-    app.use('/ ',express.static('client/build'))
+    app.use('/' , express.static('client/build'))
 
     app.get('*' , (req,res)=>{
 
